@@ -5,7 +5,7 @@ on: [push]
 jobs:
   # Deploy Process
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     #- name: Setup
     #  if: github.ref == 'refs/heads/master'
@@ -16,7 +16,7 @@ jobs:
     #- name: Settings
     #  run echo "$TEST_VAR"
     - name: Install SSH Key
-      uses: remote-client/ssh-key-action@v2.1.0
+      uses: shimataro/ssh-key-action@v2.1.0
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
