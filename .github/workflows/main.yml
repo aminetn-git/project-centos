@@ -24,4 +24,4 @@ jobs:
     - name: Execute test Script
     #  run: ssh ${{ secrets.USERNAME }}@${{ secrets.SERVER }} bash test.sh
     #  run: echo ${{github.ref}}
-      run: ssh mdmtest@mortar-dm-test.octru.ox.ac.uk "build.sh"
+      run: ssh ${ { secrets.USERNAME } }@${ { secrets.SERVER } } bash build.sh
