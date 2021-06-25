@@ -5,7 +5,7 @@ on: [push]
 jobs:
   # Deploy Process
   deploy:
-    runs-on: ubuntu
+    runs-on: ubuntu-18.04
     steps:
     #- name: Setup
     #  if: github.ref == 'refs/heads/master'
