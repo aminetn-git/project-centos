@@ -26,5 +26,5 @@ jobs:
         hosts: ec2-user@ip-172-31-31-9
         user: ec2-user
         private_key: ${{ secrets.SSH_KEY }}
-        commands: mkdir -p ~/test/
+        commands: mkdir -p ~/test222222/
         
