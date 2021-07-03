@@ -22,8 +22,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Run a command remotely
-      uses: docker://evaneos/ssh-action:0.1.0
+    - name: checkout
+      uses: actions/checkout@v1
       with:
         hosts: root@amine
         user: root
