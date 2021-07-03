@@ -23,9 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v1  
       with:
         hosts: root@amine
         user: root
         private_key: ${{ secrets.SSH_KEY }}
-        commands: echo "Hello world!"
+        commands: mkdir -p ~/test/
+        
