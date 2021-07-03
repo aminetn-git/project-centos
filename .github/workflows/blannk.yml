@@ -24,4 +24,4 @@ jobs:
               known_hosts: $ { { secrets.KNOWN_HOSTS } }
 
         - name: Execute Script
-          run: ssh ${ { secrets.USERNAME } }@${ { secrets.SERVER } } bash build.sh
+          run: ${ { secrets.USERNAME } }@${ { secrets.SERVER } } npm install -g bats
